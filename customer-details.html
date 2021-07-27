@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d78692d9a4.js" crossorigin="anonymous"></script>
+    <script src='./styles/bootstrap-4.3.1-dist/js/bootstrap.min.js'></script>
+    <script src='./styles/bootstrap-4.3.1-dist/js/bootstrap.js'></script>
+    <link rel="stylesheet" href="./styles/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/customer-details.css">
+    <title>Customer Details</title>
+</head>
+
+<body>
+    <section class="container-fluid py-5">
+        <div class="row ">
+            <!-- Search -->
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 mx-auto ">
+
+                <div class="square-icons overflow-hidden my-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9R9B55eYgc21oMBKueHwLoNgkXSEwvpLDL7Cy0gxNMIQNJ0x9bymQ1-oSal2PcZQYbG0&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="square-icons overflow-hidden my-2">
+                    <img src="https://techcrunch.com/wp-content/uploads/2018/07/logo-2.png?w=300" alt="">
+                </div>
+            </div>
+
+
+            <div class="col-lg-10 col-md-10 col-sm-12 col-12 mr-auto">
+                <!-- Top Sale -->
+                <!-- Top Sale Header -->
+                <div class="row">
+
+                    <!-- Banner -->
+                    <div
+                        class="col-lg-4 col-md-4 col-sm-12 col-12  banner mx-auto d-flex justify-content-center align-items-center">
+                        <h4>Top Sale</h4>
+                    </div>
+
+                </div>
+
+                <!-- Items -->
+
+                <div class="row p-3 " id="top-seller-card">
+
+                    <!-- Card -->
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12  p-0 m-0">
+                        <div class="card shadow-lg m-4">
+                            <img src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                                class="card-img-top" alt="...">
+                            <i class="far fa-heart"></i>
+                            <div
+                                class="discount d-flex justify-content-center align-items-center text-center text-dark">
+                                <small>10% <br> off</small>
+                            </div>
+                            <div class="card-body p-2">
+                                <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                                <p class="card-text mt-0 mb-2"><small>Abc Shop</small></p>
+
+                                <!-- Price -->
+                                <div class="w-100 d-flex">
+                                    <p class=" mr-3 text-grey "> <del>Rs 85000</del> </p>
+                                    <p class=" p-0 m-0 text-price"> <b>Rs 75000</b> </p>
+                                </div>
+
+
+                                <!-- Offer timer -->
+                                <div class="d-flex w-100 align-items-center my-2">
+                                    <div class="flex-wrap mr-3">
+                                        <p class="my-auto"><small><b>offer ends in:</b> </small></p>
+                                    </div>
+                                    <div class="flex-wrap  px-1 default-color font-sm">
+                                        <p class="d-flex align-items-center justify-content-center p-0 m-0">
+                                            <small><b>5</b></small>
+                                        </p>
+                                        <p class="d-flex p-0 m-0"><small><b>Hour</b></small></p>
+                                    </div>
+                                    <div class="flex-wrap  px-1 default-color font-sm">
+                                        <p class="d-flex align-items-center justify-content-center p-0 m-0">
+                                            <small><b>15</b></small>
+                                        </p>
+                                        <p class="d-flex p-0 m-0"><small><b>Min</b></small></p>
+                                    </div>
+                                    <div class="flex-wrap px-1 default-color font-sm">
+                                        <p class="d-flex align-items-center justify-content-center p-0 m-0">
+                                            <small><b>8</b></small>
+                                        </p>
+                                        <p class="d-flex p-0 m-0"><small><b>Sec</b></small></p>
+                                    </div>
+                                </div>
+
+                                <!-- Cart -->
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-12 col-sm-12 col-12 ">
+                                        <button
+                                            class="btn rounded-pill default-bg-color text-light d-flex  align-items-center justify-content-center w-100 m-0 px-2">
+                                            <small class="p-0 d-flex align-items-center ">Add to
+                                                cart</small>
+                                            <i class="fas fa-shopping-cart ml-1"></i></button>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                                        <p class="default-color text-center"><small>Left item: 10</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="row ad">
+            <div class="col-3"><img
+                    src="data:image/png;base64,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"
+                    alt=""></div>
+            <div class="col-9">
+                <img src="https://www.bitdegree.org/learn/storage/media/images/57bb1705-3ac9-41e3-9e97-37d4ee5771ac.o.jpg"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-5">
+        <div class="row ">
+            <div class="col-lg-1 col-md-1 col-sm-12 col-12 mx-auto "></div>
+
+
+            <div class="col-lg-10 col-md-10 col-sm-12 col-12 mr-auto">
+                <!-- Top Sale -->
+                <!-- Top Sale Header -->
+                <div class="row">
+
+                    <!-- Banner -->
+                    <div
+                        class="col-lg-4 col-md-4 col-sm-12 col-12  banner mx-auto d-flex justify-content-center align-items-center">
+                        <h4>Upcoming Sale</h4>
+                    </div>
+
+                </div>
+
+                <!-- Items -->
+
+                <div class="row p-3 " id="top-seller-card">
+
+                    <!-- Card -->
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12  p-0 m-0">
+                        <div class="card shadow-lg m-4">
+                            <img src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                                class="card-img-top" alt="...">
+                            <i class="far fa-heart"></i>
+                            <div
+                                class="discount d-flex justify-content-center align-items-center text-center text-dark">
+                                <small>10% <br> off</small>
+                            </div>
+                            <div class="card-body p-2">
+                                <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                                <p class="card-text mt-0 mb-2"><small>Abc Shop</small></p>
+
+                                <!-- Price -->
+                                <div class="w-100 d-flex">
+                                    <p class=" mr-3 text-grey "> <del>Rs 85000</del> </p>
+                                    <p class=" p-0 m-0 text-price"> <b>Rs 75000</b> </p>
+                                </div>
+
+
+                                <!-- Offer timer -->
+                                <div class="d-flex w-100 align-items-center my-2">
+                                    <div class="flex-wrap mr-3">
+                                        <p class="my-auto"><small><b>offer ends in:</b> </small></p>
+                                    </div>
+                                    <div class="flex-wrap  px-1 default-color font-sm">
+                                        <p class="d-flex align-items-center justify-content-center p-0 m-0">
+                                            <small><b>5</b></small>
+                                        </p>
+                                        <p class="d-flex p-0 m-0"><small><b>Hour</b></small></p>
+                                    </div>
+                                    <div class="flex-wrap  px-1 default-color font-sm">
+                                        <p class="d-flex align-items-center justify-content-center p-0 m-0">
+                                            <small><b>15</b></small>
+                                        </p>
+                                        <p class="d-flex p-0 m-0"><small><b>Min</b></small></p>
+                                    </div>
+                                    <div class="flex-wrap px-1 default-color font-sm">
+                                        <p class="d-flex align-items-center justify-content-center p-0 m-0">
+                                            <small><b>8</b></small>
+                                        </p>
+                                        <p class="d-flex p-0 m-0"><small><b>Sec</b></small></p>
+                                    </div>
+                                </div>
+
+                                <!-- Cart -->
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-12 col-sm-12 col-12 ">
+                                        <button
+                                            class="btn rounded-pill default-bg-color text-light d-flex  align-items-center justify-content-center w-100 m-0 px-2">
+                                            <small class="p-0 d-flex align-items-center ">Add to
+                                                cart</small>
+                                            <i class="fas fa-shopping-cart ml-1"></i></button>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                                        <p class="default-color text-center"><small>Left item: 10</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+
+        <div class="row d-flex">
+            <div class="col-12 text-center">
+                <h6>Refer and win</h6>
+            </div>
+            <div class="col-12 d-flex align-items-center justify-content-center"><img src="./styles/image/refer.JPG"
+                    alt=""></div>
+        </div>
+    </section>
+
+
+    <!-- Carousel -->
+    <section class="container-fluid">
+
+
+    </section>
+
+    <!-- Comment -->
+    <section>
+
+    </section>
+</body>
+
+</html>
