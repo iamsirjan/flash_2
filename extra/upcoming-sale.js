@@ -14,8 +14,8 @@ function callUpcomingCard() {
 
               <!-- Price -->
               <div class="w-100 d-flex">
-              <p class="p-0 mr-3 text-grey"> <del>Rs 85000</del> </p>
-              <p class="p-0 m-0 text-price"> <b>Rs 75000</b> </p>
+                  <p class="p-0 mr-3 text-grey"> <del>Rs 85000</del> </p>
+                  <p class="p-0 m-0 text-price"> <b>Rs 75000</b> </p>
               </div>
 
 
@@ -24,19 +24,19 @@ function callUpcomingCard() {
                   <div class="flex-wrap mr-3">
                       <p class="my-auto"><small><b>offer ends in:</b> </small></p>
                   </div>
-                  <div class="flex-wrap  px-1 default-color font-xs">
+                  <div class="flex-wrap  px-1 default-color font-sm">
                       <p class="d-flex align-items-center justify-content-center p-0 m-0">
                           <small><b>5</b></small>
                       </p>
                       <p class="d-flex p-0 m-0"><small><b>Hour</b></small></p>
                   </div>
-                  <div class="flex-wrap  px-1 default-color font-xs">
+                  <div class="flex-wrap  px-1 default-color font-sm">
                       <p class="d-flex align-items-center justify-content-center p-0 m-0">
                           <small><b>15</b></small>
                       </p>
                       <p class="d-flex p-0 m-0"><small><b>Min</b></small></p>
                   </div>
-                  <div class="flex-wrap px-1 default-color font-xs">
+                  <div class="flex-wrap px-1 default-color font-sm">
                       <p class="d-flex align-items-center justify-content-center p-0 m-0">
                           <small><b>8</b></small>
                       </p>
@@ -47,11 +47,11 @@ function callUpcomingCard() {
               <!-- Cart -->
               <div class="row">
                   <div class="col-lg-7 col-md-12 col-sm-12 col-12 ">
-                      <a href="#"
+                      <button
                           class="btn rounded-pill default-bg-color text-light d-flex  align-items-center justify-content-center w-100 m-0 px-2">
                           <small class="p-0 d-flex align-items-center ">Add to
                               cart</small>
-                          <i class="fas fa-shopping-cart ml-1"></i></a>
+                          <i class="fas fa-shopping-cart ml-1"></i></button>
                   </div>
                   <div class="col-lg-5 col-md-12 col-sm-12 col-12">
                       <p class="default-color text-center"><small>Left item: 10</small></p>
