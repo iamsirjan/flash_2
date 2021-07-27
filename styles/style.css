@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.default-color{
+    color: #FE7171;
+}
+.default-bg-color{
+    background-color: #FE7171;
+}
+
+.text-grey{
+    color: grey;
+}
+
+.text-price{
+    color: #3B0A69;
+}
+
+.font-sm{
+    font-size: x-small;
+}
+
+.font-xxs{
+    font-size: xx-small;
+}
