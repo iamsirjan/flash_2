@@ -67,7 +67,7 @@ body {
 
 .card {
   position: relative;
-  height: 375px;
+  height: 400px;
 }
 .card > .card-img {
   height: 60%;
@@ -138,6 +138,10 @@ body {
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 426px) {
+  #top-seller-card > div > .card {
+    margin: 10px 5px !important;
+  }
+
   .card {
     position: relative;
     height: 400px;
