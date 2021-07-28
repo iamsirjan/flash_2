@@ -78,8 +78,10 @@ body {
   top: 10px;
   right: 10px;
   color: grey;
-  font-size: xx-large;
+  /* font-size: xx-large; */
+  font-size: 25px;
 }
+
 .card > .discount {
   position: absolute;
   height: 75px;
