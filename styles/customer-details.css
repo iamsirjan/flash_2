@@ -49,6 +49,26 @@ body {
   box-shadow: none;
 }
 
+.top-banner {
+  height: 50vh;
+  overflow: hidden;
+}
+
+.top-banner > img {
+  width: 100%;
+}
+
+.brand {
+  position: relative;
+}
+.brand > img {
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+
 .banner {
   background: url("./image/banner.png");
   background-position: center;
@@ -63,6 +83,14 @@ body {
   width: 75px;
   border-radius: 10px;
   border: 0.5px solid #3b0a69;
+}
+.social-icons {
+  height: 75px;
+  width: 75px;
+  border-radius: 10px;
+}
+.social-icons > img {
+  width: 100%;
 }
 
 .card {
