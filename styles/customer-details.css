@@ -96,6 +96,13 @@ body {
 .ad > div > img {
   width: 100%;
 }
+.testimonial-img {
+  height: 100px;
+  width: 100px;
+}
+.testimonial-img > img {
+  width: 100%;
+}
 
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   .card > .discount {

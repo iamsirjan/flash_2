@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/d78692d9a4.js" crossorigin="anonymous"></script>
-    <script src='./styles/bootstrap-4.3.1-dist/js/bootstrap.min.js'></script>
-    <script src='./styles/bootstrap-4.3.1-dist/js/bootstrap.js'></script>
+
     <link rel="stylesheet" href="./styles/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/customer-details.css">
+    <link rel="stylesheet" href="./styles/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <title>Customer Details</title>
 </head>
 
@@ -213,19 +212,60 @@
     </section>
 
     <section class="container-fluid">
-
         <div class="row d-flex">
             <div class="col-12 text-center">
                 <h6>Refer and win</h6>
             </div>
-            <div class="col-12 d-flex align-items-center justify-content-center"><img src="./styles/image/refer.JPG"
-                    alt=""></div>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <img src="./styles/image/refer.JPG" width="100%" alt="">
+            </div>
         </div>
     </section>
 
 
     <!-- Carousel -->
-    <section class="container-fluid">
+    <section class="container pb-5">
+        <div class="row owl-carousel owl-theme  rounded">
+            <div class="card item p-3" style="width: 300;">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In eos ipsum
+                        voluptatibus labore, et dolor, necessitatibus voluptatem debitis expedita similique quae
+                        veritatis qui, dolores unde! Dolor recusandae maxime inventore aut?</p>
+                </div>
+                <div class="testimonial-img mx-auto overflow-hidden rounded-circle">
+                    <img class="card-img-top"
+                        src="https://st2.depositphotos.com/1009634/7235/v/600/depositphotos_72350117-stock-illustration-no-user-profile-picture-hand.jpg"
+                        alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="card item p-3" style="width: 300;">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In eos ipsum
+                        voluptatibus labore, et dolor, necessitatibus voluptatem debitis expedita similique quae
+                        veritatis qui, dolores unde! Dolor recusandae maxime inventore aut?</p>
+                </div>
+                <div class="testimonial-img mx-auto overflow-hidden rounded-circle">
+                    <img class="card-img-top"
+                        src="https://st2.depositphotos.com/1009634/7235/v/600/depositphotos_72350117-stock-illustration-no-user-profile-picture-hand.jpg"
+                        alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="card item p-3" style="width: 300;">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In eos ipsum
+                        voluptatibus labore, et dolor, necessitatibus voluptatem debitis expedita similique quae
+                        veritatis qui, dolores unde! Dolor recusandae maxime inventore aut?</p>
+                </div>
+                <div class="testimonial-img mx-auto overflow-hidden rounded-circle">
+                    <img class="card-img-top"
+                        src="https://st2.depositphotos.com/1009634/7235/v/600/depositphotos_72350117-stock-illustration-no-user-profile-picture-hand.jpg"
+                        alt="Card image cap">
+                </div>
+            </div>
+
+        </div>
 
 
     </section>
@@ -235,5 +275,38 @@
 
     </section>
 </body>
+<script src="https://kit.fontawesome.com/d78692d9a4.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/styles/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+<script>
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 10,
+        merge: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            500: {
+                items: 2,
+                nav: false,
+            },
+            700: {
+                items: 2,
+                nav: false,
+            },
+            1000: {
+                items: 3,
+            },
+        },
+    });
+</script>
 
 </html>
