@@ -20,12 +20,24 @@
                 <form>
                     <!-- Price -->
                     <div class="form-group">
-                        <h6>Price</h6>
-                        <input type="range" min="1" max="1000" class="form-range w-100 " name="price"
+
+                        <div class="d-flex">
+                            <h6 class="w-50">Price</h6>
+                            <div class="w-50 font-sm align-items-end">
+                                <p class="  m-0 bg-success py-1 px-3 rounded text-center" id="price-label">100</p>
+                            </div>
+                        </div>
+                        <input type="range" min="1" max="1000" class="form-range w-100 " name="price" id="price-range"
+                            onchange="updatePrice()"
                             style="background-color: #FF8540 !important; color: #FF8540 !important; background: #FF8540 !important;" />
                         <div class="d-flex">
-                            <p class="w-50 font-sm">High</p>
-                            <p class="w-50 font-sm text-right">Low</p>
+                            <div class="w-50 font-sm">
+                                <p>Low</p>
+                            </div>
+
+                            <div class="w-50 font-sm text-right">
+                                <p>High</p>
+                            </div>
                         </div>
                     </div>
                     <!-- Brand -->
@@ -1058,6 +1070,11 @@
     </section>
 
 </body>
-
+<script>
+    function updatePrice() {
+        var price = document.getElementById('price-range').value;
+        document.getElementById('price-label').innerHTML = price
+    }
+</script>
 
 </html>
