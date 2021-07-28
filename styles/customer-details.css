@@ -96,6 +96,10 @@ body {
 .ad > div > img {
   width: 100%;
 }
+.testimonial p {
+  background: chartreuse;
+  border-radius: 10px;
+}
 .testimonial-img {
   height: 100px;
   width: 100px;
