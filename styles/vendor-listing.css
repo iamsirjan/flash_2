@@ -1,12 +1,16 @@
+.vendor {
+  /* background: #f2f4f9; */
+  border-radius: 20px;
+}
+
 .vendor-card {
   background: #f2f4f9;
-  border-radius: 20px;
 }
 .vendor-img {
   height: 100px;
   width: 100px;
   position: absolute;
-  left: -90px;
+  left: -80px;
   top: -50px;
 }
 
