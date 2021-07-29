@@ -1,0 +1,29 @@
+.vendor-card {
+  background: #f2f4f9;
+  border-radius: 20px;
+}
+.vendor-img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: -90px;
+  top: -50px;
+}
+
+.vendor-img > img {
+  width: 100px;
+}
+
+.fa-facebook-f {
+  color: #5e55c3;
+}
+.fa-instagram {
+  color: #ed4579;
+}
+.fa-twitter {
+  color: #49d5f6;
+}
+
+.link {
+  color: #fb9907;
+}
