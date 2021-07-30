@@ -1,32 +1,28 @@
+.customer {
+  position: relative;
+  margin: 12px;
+}
 .customer-col {
-  height: 275px;
+  height: 220px;
+  width: 250px;
 }
 .customer-img {
-  width: 204px;
-  height: 209px;
-  position: absolute;
   border: 0.5px solid #000000;
-  box-sizing: border-box;
-  border-radius: 10px 131px 0px;
 
-  left: 11.81%;
-  right: 74.03%;
-  top: 9.3%;
-  bottom: 85.17%;
+  border-radius: 10px 131px 0px;
 }
 
 .customer-img > img {
-  width: 120%;
-  position: relative;
-  left: -10%;
-  /* right: 50.03%; */
+  width: 100%;
+  height: 220px;
+  /* border-radius: 10px 131px 0px; */
 }
 
 .customer-name {
   position: absolute;
   width: 50%;
-  top: 235px;
-  left: 96px;
+  top: 100%;
+  left: 55%;
 
   /* height: 50px; */
 
@@ -36,7 +32,6 @@
 }
 
 .customer-name > p {
-  position: relative;
   bottom: -15px;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
