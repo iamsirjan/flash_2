@@ -1,0 +1,24 @@
+.info-heading {
+  position: relative;
+  color: #50019a;
+  bottom: 25px;
+}
+
+.btn-toggle {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-edit-profile {
+  outline: none !important;
+  box-shadow: none !important;
+  background: #50019a;
+}
+.side-nav {
+  position: relative;
+  top: 40px;
+}
+
+.info {
+  border-left: 1px solid black;
+}
