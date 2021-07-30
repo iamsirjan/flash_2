@@ -1,7 +1,14 @@
+.info-fas {
+  color: #da7a7a;
+}
+.info-div {
+  font-size: 14px;
+  font-weight: 500;
+}
 .info-heading {
   position: relative;
   color: #50019a;
-  bottom: 25px;
+  bottom: 40px;
 }
 
 .btn-toggle {
