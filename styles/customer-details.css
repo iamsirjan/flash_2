@@ -49,19 +49,19 @@ body {
   box-shadow: none;
 }
 
-.top-banner {
+.vendordetails_top-banner {
   height: 50vh;
   overflow: hidden;
 }
 
-.top-banner > img {
+.vendordetails_top-banner > img {
   width: 100%;
 }
 
-.brand {
+.vendordetails_brand {
   position: relative;
 }
-.brand > img {
+.vendordetails_brand > img {
   height: 200px;
   width: 300px;
   position: absolute;
@@ -69,7 +69,7 @@ body {
   right: 0;
 }
 
-.banner {
+.vendordetails_banner {
   background: url("./image/banner.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -93,15 +93,15 @@ body {
   width: 100%;
 }
 
-.card {
+.vendordetails_card {
   position: relative;
   height: 400px;
 }
-.card > .card-img {
+.vendordetails_card > .vendordetails_card-img {
   height: 60%;
   overflow: hidden;
 }
-.card > .fa-heart {
+.vendordetails_card > .fa-heart {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -110,7 +110,7 @@ body {
   font-size: 25px;
 }
 
-.card > .discount {
+.vendordetails_card > .discount {
   position: absolute;
   height: 75px;
   width: 75px;
@@ -132,15 +132,15 @@ body {
 .ad > div > img {
   width: 100%;
 }
-.testimonial p {
+.vendordetails_testimonial p {
   background: chartreuse;
   border-radius: 10px;
 }
-.testimonial-img {
+.vendordetails_testimonial-img {
   height: 100px;
   width: 100px;
 }
-.testimonial-img > img {
+.vendordetails_testimonial-img > img {
   width: 100%;
 }
 .comment {
@@ -152,7 +152,7 @@ body {
 }
 
 @media only screen and (max-width: 425px) and (min-width: 320px) {
-  #top-seller-card {
+  #top-seller-vendordetails_card {
     padding: 5px 5px !important;
   }
 
@@ -160,7 +160,7 @@ body {
     padding: 0px !important;
   }
 
-  .card > .discount {
+  .vendordetails_card > .discount {
     position: absolute;
     height: 50px;
     width: 50px;
@@ -177,7 +177,7 @@ body {
     height: 25vh;
   }
 
-  .brand > img {
+  .vendordetails_brand > img {
     height: 100px;
     width: 400px;
     position: absolute;
@@ -186,14 +186,14 @@ body {
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 426px) {
-  #top-seller-card {
+  #top-seller-vendordetails_card {
     padding: 5px auto !important;
   }
   .top-banner {
     height: 25vh;
   }
 
-  .brand > img {
+  .vendordetails_brand > img {
     height: 200px;
     width: 400px;
     position: absolute;
@@ -201,15 +201,15 @@ body {
     right: 0;
   }
 
-  #top-seller-card > div > .card {
+  #top-seller-vendordetails_card > div > .vendordetails_card {
     margin: 10px 5px !important;
   }
 
-  .card {
+  .vendordetails_card {
     position: relative;
     height: 400px;
   }
-  .card > .discount {
+  .vendordetails_card > .discount {
     position: absolute;
     height: 50px;
     width: 50px;
@@ -224,10 +224,10 @@ body {
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
-  .card {
+  .vendordetails_card {
     height: 375px;
   }
-  .card > .discount {
+  .vendordetails_card > .discount {
     position: absolute;
     height: 50px;
     width: 50px;
