@@ -167,16 +167,8 @@ body {
   }
 
   .vendordetails_card > .discount {
-    position: relative;
     height: 50px;
     width: 50px;
-    background: url("./image/offer.png");
-    background-position: center;
-    background-size: cover;
-    bottom: 50%;
-    right: 5px;
-    font-size: x-small;
-    color: grey;
   }
 
   .vendordetails_brand > img {
@@ -212,16 +204,11 @@ body {
     height: 400px;
   }
   .vendordetails_card > .discount {
-    position: absolute;
     height: 50px;
     width: 50px;
-    background: url("./image/offer.png");
-    background-position: center;
-    background-size: cover;
     bottom: 50%;
     right: 5px;
     font-size: x-small;
-    color: grey;
   }
 }
 
@@ -234,16 +221,10 @@ body {
     height: 375px;
   }
   .vendordetails_card > .discount {
-    position: absolute;
     height: 50px;
     width: 50px;
-    background: url("./image/offer.png");
-    background-position: center;
-    background-size: cover;
     bottom: 50%;
     right: 5px;
-    font-size: x-small;
-    color: grey;
   }
 
   .cart-btn {
