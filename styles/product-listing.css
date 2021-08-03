@@ -67,7 +67,12 @@ body {
   height: 50px;
   width: auto;
 }
-
+.upcoming-sale-img > img {
+  width: 100%;
+}
+.upcoming-sale-img {
+  overflow: hidden;
+}
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   /* .banner > h4 {
     position: absolute;
@@ -85,6 +90,14 @@ body {
 
   .cart-btn > i {
     width: 100% !important;
+  }
+
+  .upcoming-sale-img {
+    height: 100%;
+    overflow: hidden;
+  }
+  .upcoming-sale-img > img {
+    width: 300%;
   }
 }
 
