@@ -22,15 +22,20 @@
   <body>
     <section class="container-fluid my-5">
       <div class="row px-5">
-        <div class="col-lg-12 col-sm-12 col-md-12 col-12">
-          <div class="row">
-            <div
-              class="col-lg-2 d-flex align-self-center justify-content-centalign-self-center"
-            >
-              <p class="p-0 m-0 info-div">Hi, Joseph</p>
-            </div>
+        <div class="col-lg-2 profile">
+          <div
+            class="profile-img d-flex align-items-center justify-content-center mx-auto"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+              alt=""
+            />
           </div>
+          <p class="p-0 m-0 py-2 w-100 text-center">
+            Hi, <b class="profile-name">Joseph</b>
+          </p>
         </div>
+        <div class="col-lg-10"></div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
           <div class="row">
             <div class="col-lg-2 col-md-3 col-sm-2 col-2 side-nav">
@@ -56,7 +61,7 @@
 
                   <div class="collapse show" id="profile-collapse">
                     <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-center"
+                      class="btn-toggle-nav list-unstyled fw-normal py-1 small"
                     >
                       <li><p class="p-0 m-0">Information</p></li>
                     </ul>
@@ -85,7 +90,7 @@
 
                   <div class="collapse show" id="orders-collapse">
                     <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-center"
+                      class="btn-toggle-nav list-unstyled fw-normal py-1 small"
                     >
                       <li><p class="p-0 m-0">Watchlist</p></li>
                       <br />
@@ -115,7 +120,7 @@
 
                   <div class="collapse show" id="sellers-collapse">
                     <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-center"
+                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
                     >
                       <!-- <li><p class="p-0 m-0">Watchlist</p></li>
                       <li><p class="p-0 m-0">Reviews</p></li> -->
@@ -144,7 +149,7 @@
 
                   <div class="collapse show" id="security-collapse">
                     <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-center"
+                      class="btn-toggle-nav list-unstyled fw-normal py-1 small"
                     >
                       <li><p class="p-0 m-0">Password</p></li>
                       <br />
@@ -156,37 +161,102 @@
             </div>
 
             <div class="col-lg-10 col-md-9 col-sm-10 col-10 info">
-              <div class="row px-5">
-                <div class="col-lg-6 mb-5 pb-5 info-div">
-                  <h3 class="info-heading">Profile Information</h3>
-                  <p class="p-0 m-0 py-1">Username: Joseph</p>
-                  <p class="p-0 m-0 py-1">Email: Joseph@sth.com</p>
-                  <p class="p-0 m-0 py-1">
-                    Location: Falcha, Kirtipur
-                  </p>
-                  <p class="p-0 m-0 py-1">
-                    Contact Number: 9874563210
-                  </p>
+              <div class="row px-5 mx-auto">
+                <div class="col-lg-6 info-div mb-5">
+                  <div class="px-5 my-2 shadow w-75 mx-auto">
+                    <h3 class="info-heading">Profile Information</h3>
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="profile-card-img">
+                          <img
+                            src="https://freepikpsd.com/media/2019/10/profile-pic-png-3-Transparent-Images.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-12 py-1">
+                        <div class="row">
+                          <div class="col-lg-6"><b>Username:</b></div>
+                          <div class="col-lg-6">Joseph</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 py-1">
+                        <div class="row">
+                          <div class="col-lg-6"><b>Email:</b></div>
+                          <div class="col-lg-6">Joseph@sth.com</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 py-1">
+                        <div class="row">
+                          <div class="col-lg-6"><b>Location:</b></div>
+                          <div class="col-lg-6">Kirtiput, Nepal</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 py-1">
+                        <div class="row">
+                          <div class="col-lg-6"><b>Contact:</b></div>
+                          <div class="col-lg-6">9874563210</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-6 mb-5 pb-5 info-div">
-                  <h3 class="info-heading">Shipping Details</h3>
-                  <p class="p-0 m-0 py-1">Full name: Joseph</p>
-                  <p class="p-0 m-0 py-1">City: Kathmandu</p>
-                  <p class="p-0 m-0 py-1">
-                    Address: Falcha, Kirtipur
-                  </p>
+                <div class="col-lg-6 info-div mb-5">
+                  <div class="px-5 my-2 shadow w-75 mx-auto">
+                    <h3 class="info-heading">Shipping Details</h3>
+
+                    <div class="row">
+                      <div class="col-lg-12 py-1">
+                        <div class="row">
+                          <div class="col-lg-6"><b>Full name:</b></div>
+                          <div class="col-lg-6">Joseph</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 py-1">
+                        <div class="row">
+                          <div class="col-lg-6"><b>City:</b></div>
+                          <div class="col-lg-6">Kathmandu</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 py-1">
+                        <div class="row">
+                          <div class="col-lg-6"><b>Address:</b></div>
+                          <div class="col-lg-6">Falcha, Kirtipur</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-6 mb-5 pb-5 info-div">
-                  <h3 class="info-heading">Payment Details</h3>
-                  <p class="p-0 m-0 py-1">
-                    Payment Gateway: Joseph
-                  </p>
-                  <p class="p-0 m-0 py-1">Date: 7/16/2021</p>
+                <div class="col-lg-6 info-div mb-5">
+                  <div class="px-5 my-2 shadow w-75 mx-auto">
+                    <h3 class="info-heading">Payment Details</h3>
+
+                    <div class="row">
+                      <div class="col-lg-12 py-1">
+                        <div class="row">
+                          <div class="col-lg-6"><b>Payment Gateway:</b></div>
+                          <div class="col-lg-6">Joseph</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 py-1">
+                        <div class="row">
+                          <div class="col-lg-6"><b>Date:</b></div>
+                          <div class="col-lg-6">7/16/2021</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-lg-12 mb-5">
-                  <button class="btn-edit-profile px-5 py-2 text-light">
-                    Edit Profile
-                  </button>
+                  <div class="row">
+                    <div class="col-lg-6 px-4">
+                      <div class="px-5 mx-auto">
+                        <button class="btn-edit-profile px-5 py-2 text-light">
+                          Edit Profile
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
