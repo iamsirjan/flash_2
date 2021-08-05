@@ -41,16 +41,6 @@ body {
   font-size: small;
   left: 36%;
 }
-.btn-toggle-nav > a {
-  position: relative;
-  text-decoration: none;
-  color: black;
-  font-size: small;
-  left: 36%;
-}
-.btn-toggle-nav > a :hover {
-  font-weight: bold;
-}
 .info-heading {
   position: relative;
   color: #50019a;
