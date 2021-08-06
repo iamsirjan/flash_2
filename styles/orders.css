@@ -2,18 +2,24 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.wishlist-fas {
+.orders-fas {
   color: #da7a7a;
 }
-.wishlist-div {
+.orders-div {
   font-size: 14px;
   font-weight: 500;
   /* position: relative; */
   /* bottom: 25px; */
   /* width: 75%; */
 }
-
-.wishlist-div > div {
+.btn-toggle-nav > a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: small;
+  left: 36%;
+}
+.orders-div > div {
   height: 200px;
 
   background: linear-gradient(
@@ -41,7 +47,7 @@ body {
   font-size: small;
   left: 36%;
 }
-.wishlist-heading {
+.orders-heading {
   /* position: relative; */
   color: #50019a;
   /* bottom: 50px; */
@@ -93,55 +99,63 @@ body {
   background-color: #da7a7a;
 }
 
-.btn-toggle-nav > a {
-  position: relative;
-  text-decoration: none;
-  color: black;
-  font-size: small;
-  left: 36%;
-}
-
-.wishlist-div {
+.orders-div {
   height: 244px;
 }
 
-.wishlist-img {
+.orders-img {
   height: 125px;
   width: 125px;
 }
 
-.wishlist-img > img {
+.orders-img > img {
   width: 100%;
 }
-.wishlist-th {
+.orders-th {
   text-align: center;
   border: none !important;
 }
-.wishlist-tr {
+.orders-tr {
   text-align: center;
   /* height: 125px !important; */
   /* border: 0px solid white; */
   border: none;
   padding: 50px 2px !important;
 }
-.wishlist-tr > td {
+.orders-tr > td {
   border: none;
 }
 
-.wishlist-tr > th {
+.orders-tr > th {
   border: none;
 }
 
-.wishlist-tbody {
+.orders-tbody {
   background: rgba(251, 253, 255, 0.5);
   border-radius: 10px;
 }
+
+/* .orders-tab {
+  border-bottom: none !important;
+}
+.orders-tab > .nav-item {
+  border-bottom: 5px solid #d6c5fc;
+}
+.orders-tab > li > .btn {
+  border: none !important;
+  border-color: white !important ;
+}
+.orders-tab > li > .active {
+  border: none !important;
+  border-bottom: 1px solid #d6c5fc !important;
+  margin-bottom: -2px !important;
+} */
 
 @media only screen and (max-width: 426px) and (min-width: 320px) {
   .side-nav {
     right: 45px;
   }
-  .wishlist-div {
+  .orders-div {
     height: auto;
   }
   .wishlist {
@@ -154,12 +168,12 @@ body {
     margin: 0px !important;
     padding: 0px !important;
   }
-  .wishlist-div {
+  .orders-div {
     margin: 5% 0px !important;
     padding: 0px !important;
   }
 
-  .wishlist-div > .row > div > .mt-5 {
+  .orders-div > .row > div > .mt-5 {
     margin-top: 0px !important;
   }
 }
@@ -174,7 +188,7 @@ body {
     right: 45px;
   }
 
-  .wishlist-div {
+  .orders-div {
     height: 300px;
   }
   .wishlist > .row {

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wish-list</title>
+    <script
+      src="https://kit.fontawesome.com/d78692d9a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./styles/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <script src="/styles/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles/orders.css" />
+  </head>
+
+  <body>
+    <section class="container-fluid my-5">
+      <div class="row px-5">
+        <div class="col-lg-10"></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-12 col-12 side-nav">
+              <ul class="list-unstyled ps-0">
+                <!-- Profile -->
+                <li class="mb-1">
+                  <button
+                    class="btn btn-toggle align-items-center rounded collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#profile-collapse"
+                    aria-expanded="true"
+                  >
+                    <li class="d-flex">
+                      <i
+                        class="far fa-user d-flex orders-fas align-self-center justify-content-center mx-auto px-3"
+                      ></i>
+                      <p class="p-0 m-0 px-3 mx-auto">Profile</p>
+                      <i
+                        class="fas fa-angle-up d-flex a orders-faslign-self-center justify-content-center px-3 mx-auto"
+                      ></i>
+                    </li>
+                  </button>
+
+                  <div class="collapse show" id="profile-collapse">
+                    <ul
+                      class="btn-toggle-nav list-unstyled fw-normal py-1 small"
+                    >
+                      <li><p class="p-0 m-0">Information</p></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <!-- Orders -->
+                <li class="mb-1">
+                  <button
+                    class="btn btn-toggle align-items-center rounded collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#orders-collapse"
+                    aria-expanded="true"
+                  >
+                    <li class="d-flex">
+                      <i
+                        class="fas fa-pencil-alt d-flex orders-fas align-self-center justify-content-center mx-auto px-3"
+                      ></i>
+                      <p class="p-0 m-0 px-3 mx-auto">Orders</p>
+
+                      <i
+                        class="fas fa-angle-up d-flex a orders-faslign-self-center justify-content-center px-3 mx-auto"
+                      ></i>
+                    </li>
+                  </button>
+
+                  <div class="collapse show" id="orders-collapse">
+                    <ul
+                      class="btn-toggle-nav list-unstyled fw-normal py-1 small"
+                    >
+                      <a href="wish-list.html"
+                        ><li><p class="p-0 m-0">Wishlist</p></li></a
+                      >
+                      <br />
+                      <li><p class="p-0 m-0">Orders</p></li>
+                      <br />
+                      <li><p class="p-0 m-0">Reviews</p></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <!-- Sellers -->
+                <li class="mb-1">
+                  <button
+                    class="btn btn-toggle align-items-center rounded collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#sellers-collapse"
+                    aria-expanded="true"
+                  >
+                    <li class="d-flex">
+                      <i
+                        class="fas fa-box-open d-flex a orders-fas align-self-center justify-content-center mx-auto px-3"
+                      ></i>
+                      <p class="p-0 m-0 px-3 mx-auto">Sellers</p>
+                      <i
+                        class="fas fa-angle-up d-flex a orders-faslign-self-center justify-content-center px-3 mx-auto"
+                      ></i>
+                    </li>
+                  </button>
+
+                  <div class="collapse show" id="sellers-collapse">
+                    <ul
+                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                    >
+                      <!-- <li><p class="p-0 m-0">Watchlist</p></li>
+                      <li><p class="p-0 m-0">Reviews</p></li> -->
+                    </ul>
+                  </div>
+                </li>
+
+                <!-- Security -->
+                <li class="mb-1">
+                  <button
+                    class="btn btn-toggle align-items-center rounded collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#security-collapse"
+                    aria-expanded="true"
+                  >
+                    <li class="d-flex">
+                      <i
+                        class="fas fa-shield-alt d-flex orders-fas align-self-center justify-content-center mx-auto px-3"
+                      ></i>
+                      <p class="p-0 m-0 px-3 mx-auto">Security</p>
+                      <i
+                        class="fas fa-angle-up d-flex a orders-faslign-self-center justify-content-center px-3 mx-auto"
+                      ></i>
+                    </li>
+                  </button>
+
+                  <div class="collapse show" id="security-collapse">
+                    <ul
+                      class="btn-toggle-nav list-unstyled fw-normal py-1 small"
+                    >
+                      <li><p class="p-0 m-0">Password</p></li>
+                      <br />
+                      <li><p class="p-0 m-0">Login Logs</p></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-10 col-md-9 col-sm-12 col-12 wishlist">
+              <h3 class="orders-heading px-5">My Orders</h3>
+
+              <ul
+                class="nav nav-tabs orders-tab d-flex justify-content-center align-items-center"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item px-5" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="active-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#active"
+                    type="button"
+                    role="tab"
+                    aria-controls="active"
+                    aria-selected="true"
+                  >
+                    Active
+                  </button>
+                </li>
+                <li class="nav-item px-5" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="completed-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#completed"
+                    type="button"
+                    role="tab"
+                    aria-controls="completed"
+                    aria-selected="false"
+                  >
+                    Completed
+                  </button>
+                </li>
+                <li class="nav-item px-5" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="cancel-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#cancel"
+                    type="button"
+                    role="tab"
+                    aria-controls="cancel"
+                    aria-selected="false"
+                  >
+                    Cancel
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="active"
+                  role="tabpanel"
+                  aria-labelledby="active-tab"
+                >
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="orders-th">Items Left</th>
+                        <th scope="col" class="orders-th">Image</th>
+                        <th scope="col" class="orders-th">Product name</th>
+                        <th scope="col" class="orders-th">Shop</th>
+                        <th scope="col" class="orders-th">Total</th>
+                        <th scope="col" class="orders-th">Timer</th>
+                      </tr>
+                    </thead>
+                    <tbody class="shadow orders-tbody">
+                      <tr class="orders-tr align-middle">
+                        <th scope="row">1</th>
+                        <td class="orders-img">
+                          <img
+                            src="https://5.imimg.com/data5/UC/TY/MY-9601095/100-25-cotton-fancy-casual-shirt-for-men-500x500.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td>Red Shirt</td>
+
+                        <td>Mango</td>
+                        <td>Rs xx</td>
+                        <td>3 hrs : 34 min : 6 sec</td>
+                      </tr>
+                      <tr class="orders-tr align-middle">
+                        <th scope="row">1</th>
+                        <td class="orders-img">
+                          <img
+                            src="https://5.imimg.com/data5/UC/TY/MY-9601095/100-25-cotton-fancy-casual-shirt-for-men-500x500.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td>Red Shirt</td>
+
+                        <td>Mango</td>
+                        <td>Rs xx</td>
+                        <td>3 hrs : 34 min : 6 sec</td>
+                      </tr>
+                      <tr class="orders-tr align-middle">
+                        <th scope="row">1</th>
+                        <td class="orders-img">
+                          <img
+                            src="https://img.joomcdn.net/1ba5543502bcc39238c10530e6814968979191fe_original.jpeg"
+                            alt=""
+                          />
+                        </td>
+                        <td>Red Shirt</td>
+
+                        <td>Mango</td>
+                        <td>Rs xx</td>
+                        <td>3 hrs : 34 min : 6 sec</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="completed"
+                  role="tabpanel"
+                  aria-labelledby="completed-tab"
+                >
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="orders-th">Items Left</th>
+                        <th scope="col" class="orders-th">Image</th>
+                        <th scope="col" class="orders-th">Product name</th>
+                        <th scope="col" class="orders-th">Shop</th>
+                        <th scope="col" class="orders-th">Total</th>
+                        <th scope="col" class="orders-th">Timer</th>
+                      </tr>
+                    </thead>
+                    <tbody class="shadow orders-tbody">
+                      <tr class="orders-tr align-middle">
+                        <th scope="row">1</th>
+                        <td class="orders-img">
+                          <img
+                            src="https://5.imimg.com/data5/UC/TY/MY-9601095/100-25-cotton-fancy-casual-shirt-for-men-500x500.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td>Red Shirt</td>
+
+                        <td>Mango</td>
+                        <td>Rs xx</td>
+                        <td>3 hrs : 34 min : 6 sec</td>
+                      </tr>
+                      <tr class="orders-tr align-middle">
+                        <th scope="row">1</th>
+                        <td class="orders-img">
+                          <img
+                            src="https://5.imimg.com/data5/UC/TY/MY-9601095/100-25-cotton-fancy-casual-shirt-for-men-500x500.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td>Red Shirt</td>
+
+                        <td>Mango</td>
+                        <td>Rs xx</td>
+                        <td>3 hrs : 34 min : 6 sec</td>
+                      </tr>
+                      <tr class="orders-tr align-middle">
+                        <th scope="row">1</th>
+                        <td class="orders-img">
+                          <img
+                            src="https://img.joomcdn.net/1ba5543502bcc39238c10530e6814968979191fe_original.jpeg"
+                            alt=""
+                          />
+                        </td>
+                        <td>Red Shirt</td>
+
+                        <td>Mango</td>
+                        <td>Rs xx</td>
+                        <td>3 hrs : 34 min : 6 sec</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="cancel"
+                  role="tabpanel"
+                  aria-labelledby="cancel-tab"
+                >
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="orders-th">Items Left</th>
+                        <th scope="col" class="orders-th">Image</th>
+                        <th scope="col" class="orders-th">Product name</th>
+                        <th scope="col" class="orders-th">Shop</th>
+                        <th scope="col" class="orders-th">Total</th>
+                        <th scope="col" class="orders-th">Timer</th>
+                      </tr>
+                    </thead>
+                    <tbody class="shadow orders-tbody">
+                      <tr class="orders-tr align-middle">
+                        <th scope="row">1</th>
+                        <td class="orders-img">
+                          <img
+                            src="https://5.imimg.com/data5/UC/TY/MY-9601095/100-25-cotton-fancy-casual-shirt-for-men-500x500.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td>Red Shirt</td>
+
+                        <td>Mango</td>
+                        <td>Rs xx</td>
+                        <td>3 hrs : 34 min : 6 sec</td>
+                      </tr>
+                      <tr class="orders-tr align-middle">
+                        <th scope="row">1</th>
+                        <td class="orders-img">
+                          <img
+                            src="https://5.imimg.com/data5/UC/TY/MY-9601095/100-25-cotton-fancy-casual-shirt-for-men-500x500.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td>Red Shirt</td>
+
+                        <td>Mango</td>
+                        <td>Rs xx</td>
+                        <td>3 hrs : 34 min : 6 sec</td>
+                      </tr>
+                      <tr class="orders-tr align-middle">
+                        <th scope="row">1</th>
+                        <td class="orders-img">
+                          <img
+                            src="https://img.joomcdn.net/1ba5543502bcc39238c10530e6814968979191fe_original.jpeg"
+                            alt=""
+                          />
+                        </td>
+                        <td>Red Shirt</td>
+
+                        <td>Mango</td>
+                        <td>Rs xx</td>
+                        <td>3 hrs : 34 min : 6 sec</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
