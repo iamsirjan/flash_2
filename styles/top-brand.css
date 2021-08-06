@@ -1,0 +1,13 @@
+.top-brand-div {
+  float: left !important;
+}
+.top-brand-img {
+  width: 225px;
+  height: 150px;
+  border: 1px solid #e0e0e0;
+  float: left !important;
+  overflow: hidden;
+}
+.top-brand-img > img {
+  width: 75%;
+}
