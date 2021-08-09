@@ -9,10 +9,11 @@
 
     <link rel="stylesheet" href="./styles/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/product-detail.css" />
-    <link rel="stylesheet" href="./styles/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script src="https://kit.fontawesome.com/d78692d9a4.js" crossorigin="anonymous"></script>
     <script src="./styles/js/zoom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -23,36 +24,32 @@
                 <div class="row px-5">
                     <div class="col-5 d-flex align-items-center justify-content-center  p-0">
                         <div class="row p-0">
-                            <div class="col-12 product-img p-0" id="img-container" style="z-index: 1;" >
+                            <div class="col-12 product-img p-0" id="img-container" style="z-index: 1;">
                                 <img src="https://dazedimg-dazedgroup.netdna-ssl.com/1080/azure/dazed-prod/1290/5/1295031.jpg"
-                                    alt="" >
+                                    alt="" id="img-large">
                             </div>
-                  
+
                             <!-- Img small -->
                             <div class="col-lg-12 col-md-12 col-sm-12 col-12 px-0 mt-3">
                                 <div class="row d-flex align-items-center justify-content-lg-between">
-                                    <div class="col-4 product-img-small">
+                                    <div class="col-4 product-img-small" id="thumbs_img">
                                         <img src="https://media.newyorker.com/photos/5f1604e4c0d6d7b73793b1d7/master/w_1600%2Cc_limit/Syme-NapDress.jpg"
-                                            alt="" id="myImg">
+                                            alt="" onclick="replaceThumbnail('https://media.newyorker.com/photos/5f1604e4c0d6d7b73793b1d7/master/w_1600%2Cc_limit/Syme-NapDress.jpg')">
                                     </div>
-                                    <div class="col-4 product-img-small">
+                                    <div class="col-4 product-img-small" id="thumbs_img">
                                         <img src="https://media.newyorker.com/photos/5f1604e4c0d6d7b73793b1d7/master/w_1600%2Cc_limit/Syme-NapDress.jpg"
-                                            alt="" id="myImg">
+                                            alt="" onclick="replaceThumbnail('https://media.newyorker.com/photos/5f1604e4c0d6d7b73793b1d7/master/w_1600%2Cc_limit/Syme-NapDress.jpg')" >
                                     </div>
-                                    <div class="col-4 product-img-small">
+                                    <div class="col-4 product-img-small" id="thumbs_img">
                                         <img src="https://media.newyorker.com/photos/5f1604e4c0d6d7b73793b1d7/master/w_1600%2Cc_limit/Syme-NapDress.jpg"
-                                            alt="" id="myImg">
+                                            alt="" onclick="replaceThumbnail('https://media.newyorker.com/photos/5f1604e4c0d6d7b73793b1d7/master/w_1600%2Cc_limit/Syme-NapDress.jpg')" >
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="myModal" class="modal">
-                        <span class="close">&times;</span>
-                        <img id="modal-img" class="modal-content"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS2ol73JZj6-IqypxPZXYS3rRiPwKteoD8vezk9QsRdkjt3jEn&usqp=CAU">
-                        <div id="caption"></div>
-                      </div>
+
                     <div class="col-7 px-5">
                         <div class="w-100">
                             <h5>Cotton t-shirt</h5>
@@ -602,54 +599,28 @@
         </div>
     </section>
 
- 
-
+    
     <script>
         var options1 = {
             width: 400,
             zoomWidth: 500,
-            offset: {vertical: 0, horizontal: 10},
+            offset: { vertical: 0, horizontal: 10 },
         };
-        
+
         // If the width and height of the image are not known or to adjust the image to the container of it
         var options2 = {
             fillContainer: true,
-            offset: {vertical: 0, horizontal: 10}
+            offset: { vertical: 0, horizontal: 10 }
         };
         new ImageZoom(document.getElementById("img-container"), options2);
-        
 
 
-        // Image popup
+      function replaceThumbnail(img){
+          document.getElementById('img-large').src=img;
+      }
 
+    </script>
 
-        // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-// var img = document.getElementById("myImg");
-var modalImg = document.getElementById("modal-img");
-var captionText = document.getElementById("caption");
-
-document.addEventListener("click", (e) => {
-  const elem = e.target;
-  if (elem.id==="myImg") {
-    modal.style.display = "block";
-    modalImg.src = elem.dataset.biggerSrc || elem.src;
-    captionText.innerHTML = elem.alt; 
-  }
-})
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-
-        </script>
-        
 </body>
 
 
