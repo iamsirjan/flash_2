@@ -1,0 +1,285 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  background: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background: rgb(255, 255, 255);
+}
+
+.default-color {
+  color: #ff3f3f;
+}
+.default-bg-color {
+  background-color: #ff3f3f;
+}
+
+.text-grey {
+  color: grey;
+}
+
+.text-price {
+  color: #3b0a69;
+}
+
+.font-sm {
+  font-size: smaller;
+}
+
+.font-xs {
+  font-size: x-small;
+}
+
+.font-xxs {
+  font-size: xx-small;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.productdetails_top-banner {
+  height: 50vh;
+  overflow: hidden;
+}
+
+.productdetails_top-banner > img {
+  width: 100%;
+}
+
+.productdetails_brand {
+  position: relative;
+}
+.productdetails_brand > img {
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+
+.square-icons {
+  height: 75px;
+  width: 75px;
+  border-radius: 10px;
+  border: 0.5px solid #3b0a69;
+}
+.social-icons {
+  height: 75px;
+  width: 75px;
+  border-radius: 10px;
+}
+.social-icons > img {
+  width: 100%;
+}
+
+.productdetails_card {
+  position: relative;
+  height: 400px;
+}
+.productdetails_card > .productdetails_card-img {
+  height: 60%;
+  overflow: hidden;
+}
+.productdetails_card-img > img {
+  width: 100%;
+}
+.productdetails_card > .fa-heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: grey;
+  /* font-size: xx-large; */
+  font-size: 25px;
+}
+
+.productdetails_card > .discount {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  background: url("./image/offer.png");
+  background-position: center;
+  background-size: cover;
+  bottom: 30%;
+  right: 10px;
+  color: grey;
+}
+.square-icons > img {
+  width: 100%;
+}
+
+.ad > div {
+  height: 200px;
+  overflow: hidden;
+}
+.ad > div > img {
+  width: 100%;
+}
+.productdetails_testimonial p {
+  background: chartreuse;
+  border-radius: 10px;
+}
+.productdetails_testimonial-img {
+  height: 100px;
+  width: 100px;
+}
+.productdetails_testimonial-img > img {
+  width: 100%;
+}
+.comment {
+  border: 1px solid rgb(172, 167, 167);
+}
+.btn-comment {
+  border: none;
+  background: #3b0a69;
+}
+
+.sale-img > img {
+  /* width: 300% !important; */
+  width: 100%;
+}
+.sale-img {
+  height: 150px;
+  overflow: hidden !important;
+}
+
+.productdetails-offer {
+  color: #ff3f3f !important;
+}
+
+.product-img {
+  height: 375px;
+  /* overflow: hidden; */
+}
+
+.product-img > img {
+  width: 100% !important;
+}
+
+.product-img-small {
+  height: 100px;
+  /* width: 400px; */
+  overflow: hidden;
+}
+.product-img-small > img {
+  width: 100%;
+}
+/* .color-pallet {
+  width: 100%;
+} */
+
+/* .color-pallet {
+  height: 8px !important;
+  width: 8px !important;
+  border-radius: 100%;
+  background: #fa394e;
+  position: relative;
+  left: 28%;
+  right: 55.55%;
+  top: 21.83%;
+  bottom: 77.79%;
+} */
+
+@media only screen and (max-width: 426px) and (min-width: 320px) {
+  .productdetails_brand {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .social-icons {
+    height: 50px;
+    width: 50px;
+  }
+  .productdetails_top-banner {
+    height: 25vh !important;
+  }
+  #productdetails-recommended-card {
+    padding: 5px 5px !important;
+  }
+
+  .recommended-section {
+    padding-bottom: 0px !important;
+  }
+
+  .productdetails_card > .discount {
+    height: 50px;
+    width: 50px;
+  }
+
+  .productdetails_brand > img {
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  #productdetails-recommended-card {
+    padding: 5px auto !important;
+  }
+  .top-banner {
+    height: 25vh;
+  }
+
+  .productdetails_brand > img {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: -100px;
+    right: 0;
+  }
+
+  #productdetails-recommended-card > div > .productdetails_card {
+    margin: 10px 5px !important;
+  }
+
+  .productdetails_card {
+    position: relative;
+    height: 400px;
+  }
+  .productdetails_card > .discount {
+    height: 50px;
+    width: 50px;
+    bottom: 50%;
+    right: 5px;
+    font-size: x-small;
+  }
+  .sale-img {
+    height: 100%;
+    overflow: hidden;
+  }
+  .sale-img > img {
+    width: 300%;
+  }
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 769px) {
+  #productdetails-recommended-card > div > .productdetails_card {
+    margin: 10px 5px !important;
+  }
+
+  .productdetails_card {
+    height: 375px;
+  }
+  .productdetails_card > .discount {
+    height: 50px;
+    width: 50px;
+    bottom: 50%;
+    right: 5px;
+  }
+
+  .cart-btn {
+    font-size: xx-small !important;
+  }
+  .cart-btn > small {
+    width: 100% !important;
+  }
+
+  .cart-btn > i {
+    width: 100% !important;
+  }
+}
