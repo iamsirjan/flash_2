@@ -33,22 +33,26 @@
                                 <div class="row d-flex align-items-center justify-content-lg-between">
                                     <div class="col-4 product-img-small">
                                         <img src="https://media.newyorker.com/photos/5f1604e4c0d6d7b73793b1d7/master/w_1600%2Cc_limit/Syme-NapDress.jpg"
-                                            alt="">
+                                            alt="" id="myImg">
                                     </div>
                                     <div class="col-4 product-img-small">
                                         <img src="https://media.newyorker.com/photos/5f1604e4c0d6d7b73793b1d7/master/w_1600%2Cc_limit/Syme-NapDress.jpg"
-                                            alt="">
+                                            alt="" id="myImg">
                                     </div>
                                     <div class="col-4 product-img-small">
                                         <img src="https://media.newyorker.com/photos/5f1604e4c0d6d7b73793b1d7/master/w_1600%2Cc_limit/Syme-NapDress.jpg"
-                                            alt="">
+                                            alt="" id="myImg">
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img id="modal-img" class="modal-content"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS2ol73JZj6-IqypxPZXYS3rRiPwKteoD8vezk9QsRdkjt3jEn&usqp=CAU">
+                        <div id="caption"></div>
+                      </div>
                     <div class="col-7 px-5">
                         <div class="w-100">
                             <h5>Cotton t-shirt</h5>
@@ -597,6 +601,9 @@
             </div>
         </div>
     </section>
+
+ 
+
     <script>
         var options1 = {
             width: 400,
@@ -611,6 +618,36 @@
         };
         new ImageZoom(document.getElementById("img-container"), options2);
         
+
+
+        // Image popup
+
+
+        // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+// var img = document.getElementById("myImg");
+var modalImg = document.getElementById("modal-img");
+var captionText = document.getElementById("caption");
+
+document.addEventListener("click", (e) => {
+  const elem = e.target;
+  if (elem.id==="myImg") {
+    modal.style.display = "block";
+    modalImg.src = elem.dataset.biggerSrc || elem.src;
+    captionText.innerHTML = elem.alt; 
+  }
+})
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
         </script>
         
 </body>
