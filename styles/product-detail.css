@@ -244,12 +244,12 @@ body {
 
   .productdetails_card {
     position: relative;
-    height: 400px;
+    height: 325px;
   }
   .productdetails_card > .discount {
     height: 50px;
     width: 50px;
-    bottom: 50%;
+    bottom: 40%;
     right: 5px;
     font-size: x-small;
   }
