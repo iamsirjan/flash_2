@@ -82,7 +82,9 @@ body {
     padding: 0px !important;
     /* margin: 0px !important; */
   }
-
+  .checkout-register > .row {
+    padding: 0 !important;
+  }
   .checkout-summary > div > .row {
     margin: 0px !important;
   }
