@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+.login-section {
+  height: 100vh;
+  font-family: "Quicksand" !important;
+}
+
+.btn-login-facebook {
+  background-color: rgba(59, 89, 152, 1) !important;
+}
+.btn-login-google {
+  background: #ffffff !important;
+  border: 0.5px solid #3b0a69 !important;
+}
+.btn-login {
+  background: #3b0a69 !important;
+  color: white !important;
+}
+
+.btn-login-google > img {
+  width: 20px;
+}
+.login-eye-slash {
+  position: relative;
+  bottom: 30px;
+  left: 300px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 426px) and (min-width: 320px) {
+  .login-eye-slash {
+    left: 90%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  .login-eye-slash {
+    left: 250px;
+  }
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 769px) {
+  .login-eye-slash {
+    left: 90% !important;
+  }
+
+  .login-form > .row {
+    padding: 0 !important;
+  }
+  .login-form {
+    padding: 0 !important;
+    width: 400px !important;
+  }
+
+  .login-eye-slash {
+    left: 250px;
+  }
+}
+@media only screen and (min-width: 1439px) {
+  .login-eye-slash {
+    left: 245px;
+  }
+}
