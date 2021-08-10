@@ -607,7 +607,7 @@
             offset: { vertical: 0, horizontal: 10 },
         };
 
-        // If the width and height of the image are not known or to adjust the image to the container of it
+       
         var options2 = {
             fillContainer: true,
             offset: { vertical: 0, horizontal: 10 }
@@ -617,6 +617,8 @@
 
       function replaceThumbnail(img){
           document.getElementById('img-large').src=img;
+        new ImageZoom(document.getElementById("img-container"), options2);
+
       }
 
     </script>
