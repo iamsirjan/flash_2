@@ -26,7 +26,16 @@
   left: 300px;
   cursor: pointer;
 }
+.login-display-block {
+  display: block !important;
+}
+.login-display-none {
+  display: none !important;
+}
 
+.register-form {
+  width: 400px !important;
+}
 @media only screen and (max-width: 426px) and (min-width: 320px) {
   .login-eye-slash {
     left: 90%;
