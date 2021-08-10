@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <script
+      src="https://kit.fontawesome.com/d78692d9a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/shipping.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/bootstrap-4.3.1-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <section class="container-fluid shipping-section">
+      <div class="row">
+        <div class="col-lg-12 p-5">
+          <div class="shipping-line"></div>
+
+          <div class="row">
+            <div class="col-3">
+              <div
+                class="shipping-icons shipping-icons-active d-flex justify-content-center align-items-center mx-auto"
+              >
+                <i class="fas fa-sign-in-alt"></i>
+              </div>
+              <p class="w-100 text-center small mt-2">Login</p>
+            </div>
+            <div class="col-3">
+              <div
+                class="shipping-icons shipping-icons-active d-flex justify-content-center align-items-center mx-auto"
+              >
+                <i class="fas fa-truck"></i>
+              </div>
+              <p class="w-100 text-center small mt-2">Shipping Address</p>
+            </div>
+            <div class="col-3">
+              <div
+                class="shipping-icons d-flex justify-content-center align-items-center mx-auto"
+              >
+                <i class="fas fa-money-check-alt"></i>
+              </div>
+              <p class="w-100 text-center small mt-2">Payment</p>
+            </div>
+            <div class="col-3">
+              <div
+                class="shipping-icons d-flex justify-content-center align-items-center mx-auto"
+              >
+                <i class="far fa-check-circle"></i>
+              </div>
+              <p class="w-100 text-center small mt-2">Conformation</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="row">
+            <!-- Billing Address -->
+            <div class="col-8">
+              <div
+                class="row d-flex align-items-center justify-content-between px-5"
+              >
+                <div class="col-lg-6 col-md-5 col-sm-12 col-12">
+                  <b>Shipping Address</b>
+                  <p>
+                    <small
+                      >Please fill the form for your shipping address</small
+                    >
+                  </p>
+
+                  <div class="form-group">
+                    <label for="fullname"><small>FULL NAME</small></label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="fullname"
+                      aria-describedby="emailHelp"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="mobile"><small>MOBILE NUMBER</small></label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="mobile"
+                      aria-describedby="emailHelp"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="district"><small>DISTRICT</small></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="district"
+                      aria-describedby=""
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <!-- <label for="district"><small>DISTRICT</small></label> -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="district"
+                      aria-describedby=""
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <!-- <label for="district"><small>DISTRICT</small></label> -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="district"
+                      aria-describedby=""
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-12 col-12">
+                  <b>Billing Address</b>
+                  <p>
+                    <small>Copy Shipping Address</small>
+                  </p>
+
+                  <div class="form-group">
+                    <label for="fullname"><small>FULL NAME</small></label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="fullname"
+                      aria-describedby="emailHelp"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="mobile"><small>MOBILE NUMBER</small></label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="mobile"
+                      aria-describedby="emailHelp"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="district"><small>DISTRICT</small></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="district"
+                      aria-describedby=""
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <!-- <label for="district"><small>DISTRICT</small></label> -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="district"
+                      aria-describedby=""
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <!-- <label for="district"><small>DISTRICT</small></label> -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="district"
+                      aria-describedby=""
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+
+                <div class="col-6"></div>
+                <div class="col-6">
+                  <button class="btn-shipping btn float-right">Continue</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 shipping-summary">
+              <div class="w-100 px-5">
+                <div class="row mx-5 shipping-summary-row">
+                  <div class="col-12 mb-2 pt-3 border-bottom">
+                    <p><b>Order Summary</b></p>
+                  </div>
+                  <div class="col-7">Selected 1 item(s) Price</div>
+                  <div class="col-lg-5 col-md-5 col-sm-12 col-12">Rs. 150</div>
+                  <div class="col-7">Delivery</div>
+                  <div class="col-lg-5 col-md-5 col-sm-12 col-12">Rs. 0</div>
+                  <div class="col-6 mt-4">
+                    <p class="text-center">
+                      <small class="border-bottom">e-pay</small>
+                    </p>
+                  </div>
+                  <div class="col-6 mt-4">
+                    <p class="text-center"><small>VOUCHER CODE</small></p>
+                  </div>
+                  <div class="col-12 pb-4 mb-2 border-bottom text-center">
+                    <small>Please Login/Register to use G-cash</small>
+                  </div>
+                  <div class="col-7 pb-2"><b>Total Payable</b></div>
+                  <div class="col-5 pb-2"><b>Rs. 150</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
