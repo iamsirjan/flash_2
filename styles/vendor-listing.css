@@ -41,7 +41,8 @@
   top: -30px !important;
 }
 .vendor-name {
-  background-color: rgba(0, 217, 255, 0.329);
+  /* background-color: rgba(0, 217, 255, 0.329); */
+  background-color: #eeeeee;
   color: rgba(246, 64, 62, 1);
   border-radius: 0px 20px 0px 20px;
 }
