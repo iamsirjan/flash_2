@@ -42,7 +42,7 @@ body {
 }
 
 .vendordetails_top-banner {
-  height: 50vh;
+  height: 40vh;
   overflow: hidden !important;
   /* border-radius: 50px !important; */
 }
@@ -68,11 +68,11 @@ body {
   width: 100%;
 }
 .vendordetails-carousel-img {
-  width: 8% !important;
+  width: 5% !important;
 }
 .vendordetails-arrow {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 18px;
+  /* font-weight: bold; */
 }
 .vendordetails-carousel-img > img {
   width: 100%;
