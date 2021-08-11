@@ -43,13 +43,43 @@ body {
 
 .vendordetails_top-banner {
   height: 50vh;
-  overflow: hidden;
+  overflow: hidden !important;
+  /* border-radius: 50px !important; */
 }
 
 .vendordetails_top-banner > img {
   width: 100%;
+  height: 100%;
+  /* border-radius: 50px; */
 }
-
+.vendor-img {
+  height: 125px;
+  width: 125px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.vendor-name {
+  color: #c17502;
+  border-bottom: 2px solid #c17502;
+}
+.vendor-social-icon {
+}
+.vendor-social-icon > img {
+  width: 100%;
+}
+.vendordetails-carousel-img {
+  width: 8% !important;
+}
+.vendordetails-arrow {
+  font-size: 30px;
+  font-weight: bold;
+}
+.vendordetails-carousel-img > img {
+  width: 100%;
+}
+.vendor-img > img {
+  width: 100%;
+}
 .vendordetails_brand {
   position: relative;
   width: 20%;
