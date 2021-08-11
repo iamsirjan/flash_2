@@ -10,7 +10,11 @@
 }
 .vendor-card {
   background: #f2f4f9;
+  height: 300px;
 }
+/* .vendor-card-div {
+  height: 250px;
+} */
 .vendor-img {
   height: 75px !important;
   width: 75px !important;
