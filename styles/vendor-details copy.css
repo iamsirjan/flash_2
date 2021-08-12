@@ -9,7 +9,9 @@ body {
   padding: 0px;
   background: rgb(255, 255, 255);
 }
-
+.fa-heart {
+  cursor: pointer !important;
+}
 .default-color {
   color: #ff3f3f;
 }
@@ -66,6 +68,16 @@ body {
   border-bottom: 2px solid #c17502;
   /* width: fit-content; */
   text-align: center;
+}
+.vendor-specialoffer-ad-image {
+  height: 465px;
+  overflow: hidden;
+}
+.vendor-specialoffer-ad-image > img {
+  width: 100%;
+}
+.vendor-specialoffer {
+  height: 465px;
 }
 .vendor-social-icon {
   width: 100%;
@@ -311,7 +323,9 @@ body {
   #top-seller-card {
     padding: 5px 5px !important;
   }
-
+  .vendor-specialoffer {
+    height: auto !important;
+  }
   .top-sale-section {
     padding-bottom: 0px !important;
   }
@@ -366,6 +380,10 @@ body {
     bottom: 50%;
     right: 5px;
     font-size: x-small;
+  }
+
+  .vendor-specialoffer {
+    height: auto !important;
   }
 }
 
