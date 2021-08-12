@@ -46,7 +46,9 @@ body {
   height: 50vh;
   overflow: hidden;
 }
-
+#default {
+  text-align: center;
+}
 .productdetails_top-banner > img {
   width: 100%;
 }
