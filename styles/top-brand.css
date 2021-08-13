@@ -1,5 +1,6 @@
 .top-brand-div {
   float: left !important;
+  height: fit-content !important;
 }
 .top-brand-img {
   width: 225px;
