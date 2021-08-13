@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+/* footer > div > div > ul > li {
+  text-decoration: none !important;
+} */
+footer {
+  font-family: "Lato";
+}
+footer > div > div > ul {
+  text-decoration: none !important;
+  list-style-type: none;
+  padding: 0px;
+}
