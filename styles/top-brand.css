@@ -11,3 +11,19 @@
 .top-brand-img > img {
   width: 75%;
 }
+@media only screen and (max-width: 426px) {
+  .top-brand-img {
+    width: 245px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .top-brand-img {
+    width: 260px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .top-brand-img {
+    width: 250px;
+  }
+}
