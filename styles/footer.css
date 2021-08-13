@@ -11,3 +11,17 @@ footer > div > div > ul {
   list-style-type: none;
   padding: 0px;
 }
+@media only screen and (max-width: 426px) {
+  .footer-social-div {
+    padding: 0px !important;
+  }
+  /* .footer-social-div > .w-75 {
+    width: 100% !important;
+  } */
+  .footer-social-div > .footer-social {
+    width: 55% !important;
+  }
+  .footer-payment {
+    width: 100% !important;
+  }
+}
