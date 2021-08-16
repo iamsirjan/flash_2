@@ -19,9 +19,9 @@ footer > div > div > ul {
     width: 100% !important;
   } */
   .footer-social-div > .footer-social {
-    width: 55% !important;
+    width: 35% !important;
   }
   .footer-payment {
-    width: 100% !important;
+    width: 55% !important;
   }
 }
