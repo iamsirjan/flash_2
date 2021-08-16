@@ -24,4 +24,7 @@ footer > div > div > ul {
   .footer-payment {
     width: 55% !important;
   }
+  #footer > .row {
+    padding: 7% !important;
+  }
 }
