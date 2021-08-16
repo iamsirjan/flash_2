@@ -1,0 +1,29 @@
+.top-brand-div {
+  height: fit-content !important;
+}
+.top-brand-img {
+  /* width: 90%; */
+  /* height: 150px; */
+  border: 1px solid #e0e0e0;
+  float: left !important;
+  overflow: hidden;
+}
+.top-brand-img > img {
+  width: 75%;
+}
+@media only screen and (max-width: 426px) {
+  .top-brand-img {
+    width: 245px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .top-brand-img {
+    width: 260px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .top-brand-img {
+    width: 250px;
+  }
+}
