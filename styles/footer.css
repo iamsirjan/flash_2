@@ -11,6 +11,11 @@ footer > div > div > ul {
   list-style-type: none;
   padding: 0px;
 }
+
+.footer-social {
+  width: 35px;
+}
+
 @media only screen and (max-width: 426px) {
   .footer-social-div {
     padding: 0px !important;
