@@ -1,0 +1,11 @@
+.wishlist-empty-input {
+  /* border: 0.5px solid grey; */
+  background: #d3d3d3;
+  box-sizing: unset;
+}
+.wishlist-empty-input > input {
+  border: none;
+  background: #d3d3d3;
+
+  width: 90%;
+}
