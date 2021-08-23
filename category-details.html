@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>category details</title>
+    <link rel="stylesheet" href="styles/category-details.css" />
+
+    <link
+      rel="stylesheet"
+      href="./styles/bootstrap-4.3.1-dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d78692d9a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <div class="row px-0 mx-0">
+        <!-- Intro & search -->
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+          <div class="row px-1">
+            <!-- Price -->
+            <div class="col-12 px-5 mt-5 category_details_checkbox">
+              <form class="px-5">
+                <!-- Price -->
+                <div class="form-group">
+                  <div class="d-flex">
+                    <h6 class="w-50">Price</h6>
+                  </div>
+                  <input
+                    type="range"
+                    min="1"
+                    max="1000"
+                    class="form-range w-100"
+                    name="price"
+                    id="price-range"
+                    onchange="updatePrice()"
+                  />
+                  <div class="d-flex">
+                    <div class="w-50 font-sm">
+                      <p>1</p>
+                    </div>
+
+                    <div class="w-50 font-sm text-right">
+                      <p>1000</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                  <h6>Gender</h6>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="female"
+                    />
+                    <label class="form-check-label" for="female">
+                      <small>female</small>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="male"
+                    />
+                    <label class="form-check-label" for="male">
+                      <small>male</small>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="all"
+                    />
+                    <label class="form-check-label" for="all">
+                      <small>all</small>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Type -->
+                <div class="form-group">
+                  <h6>Type</h6>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="sandal"
+                    />
+                    <label class="form-check-label" for="sandal">
+                      <small>sandal</small>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="wedge"
+                    />
+                    <label class="form-check-label" for="wedge">
+                      <small>wedge</small>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="trekking shoe"
+                    />
+                    <label class="form-check-label" for="trekking shoe">
+                      <small>trekking shoe</small>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="casual"
+                    />
+                    <label class="form-check-label" for="casual">
+                      <small>casual</small>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="party wear"
+                    />
+                    <label class="form-check-label" for="party wear">
+                      <small>party wear</small>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="sneakers"
+                    />
+                    <label class="form-check-label" for="sneakers">
+                      <small>sneakers</small>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="ankle boots"
+                    />
+                    <label class="form-check-label" for="ankle boots">
+                      <small>ankle boots</small>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards & stuffs -->
+        <div class="col-lg-9 col-md-9 col-sm-12 col-12 m-0 p-0 overflow-hidden">
+          <div class="row p-0 m-0">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0 m-0">
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="text-center">Top sale</h3>
+                </div>
+              </div>
+              <!-- Items -->
+              <div class="row py-5 px-0 mx-0" id="top-seller-card">
+                <!-- Card -->
+                <div
+                  class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                >
+                  <div class="card category_details_card shadow-lg">
+                    <div
+                      class="category_details_card_img d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://media.gq-magazine.co.uk/photos/604b8dfc78d908f40e61811c/master/w_1920,h_1280,c_limit/Short%20sleeve%20shirts_0004_AHLUWALIA.jpg"
+                        class="category_details_card_img_top"
+                        alt="..."
+                      />
+                    </div>
+
+                    <i class="far fa-heart"></i>
+                    <div
+                      class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                    >
+                      <small
+                        >10% <br />
+                        off</small
+                      >
+                    </div>
+                    <div class="card-body p-2">
+                      <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                      <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                      <!-- Price -->
+                      <div class="w-100 d-flex">
+                        <p class="mr-3 text-grey p-0 m-0">
+                          <del>Rs 85000</del>
+                        </p>
+                        <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                      </div>
+
+                      <!-- Offer timer -->
+                      <div class="d-flex w-100 align-items-center my-2">
+                        <div class="flex-wrap mr-3">
+                          <p class="my-auto">
+                            <small><b>offer ends in:</b> </small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>5</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Hour</b></small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>15</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Min</b></small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>8</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Sec</b></small>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Cart -->
+                      <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                          <button
+                            class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                          >
+                            <small class="p-0 d-flex align-items-center"
+                              >Add to cart</small
+                            >
+                            <i class="fas fa-shopping-cart ml-1"></i>
+                          </button>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                          <p class="default-color text-center">
+                            <small>Left item: 10</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                >
+                  <div class="card category_details_card shadow-lg">
+                    <div
+                      class="category_details_card_img d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                        class="category_details_card_img_top"
+                        alt="..."
+                      />
+                    </div>
+
+                    <i class="far fa-heart"></i>
+                    <div
+                      class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                    >
+                      <small
+                        >10% <br />
+                        off</small
+                      >
+                    </div>
+                    <div class="card-body p-2">
+                      <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                      <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                      <!-- Price -->
+                      <div class="w-100 d-flex">
+                        <p class="mr-3 text-grey p-0 m-0">
+                          <del>Rs 85000</del>
+                        </p>
+                        <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                      </div>
+
+                      <!-- Offer timer -->
+                      <div class="d-flex w-100 align-items-center my-2">
+                        <div class="flex-wrap mr-3">
+                          <p class="my-auto">
+                            <small><b>offer ends in:</b> </small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>5</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Hour</b></small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>15</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Min</b></small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>8</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Sec</b></small>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Cart -->
+                      <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                          <button
+                            class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                          >
+                            <small class="p-0 d-flex align-items-center"
+                              >Add to cart</small
+                            >
+                            <i class="fas fa-shopping-cart ml-1"></i>
+                          </button>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                          <p class="default-color text-center">
+                            <small>Left item: 10</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                >
+                  <div class="card category_details_card shadow-lg">
+                    <div
+                      class="category_details_card_img d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                        class="category_details_card_img_top"
+                        alt="..."
+                      />
+                    </div>
+
+                    <i class="far fa-heart"></i>
+                    <div
+                      class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                    >
+                      <small
+                        >10% <br />
+                        off</small
+                      >
+                    </div>
+                    <div class="card-body p-2">
+                      <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                      <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                      <!-- Price -->
+                      <div class="w-100 d-flex">
+                        <p class="mr-3 text-grey p-0 m-0">
+                          <del>Rs 85000</del>
+                        </p>
+                        <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                      </div>
+
+                      <!-- Offer timer -->
+                      <div class="d-flex w-100 align-items-center my-2">
+                        <div class="flex-wrap mr-3">
+                          <p class="my-auto">
+                            <small><b>offer ends in:</b> </small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>5</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Hour</b></small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>15</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Min</b></small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>8</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Sec</b></small>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Cart -->
+                      <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                          <button
+                            class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                          >
+                            <small class="p-0 d-flex align-items-center"
+                              >Add to cart</small
+                            >
+                            <i class="fas fa-shopping-cart ml-1"></i>
+                          </button>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                          <p class="default-color text-center">
+                            <small>Left item: 10</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                >
+                  <div class="card category_details_card shadow-lg">
+                    <div
+                      class="category_details_card_img d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                        class="category_details_card_img_top"
+                        alt="..."
+                      />
+                    </div>
+
+                    <i class="far fa-heart"></i>
+                    <div
+                      class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                    >
+                      <small
+                        >10% <br />
+                        off</small
+                      >
+                    </div>
+                    <div class="card-body p-2">
+                      <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                      <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                      <!-- Price -->
+                      <div class="w-100 d-flex">
+                        <p class="mr-3 text-grey p-0 m-0">
+                          <del>Rs 85000</del>
+                        </p>
+                        <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                      </div>
+
+                      <!-- Offer timer -->
+                      <div class="d-flex w-100 align-items-center my-2">
+                        <div class="flex-wrap mr-3">
+                          <p class="my-auto">
+                            <small><b>offer ends in:</b> </small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>5</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Hour</b></small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>15</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Min</b></small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>8</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Sec</b></small>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Cart -->
+                      <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                          <button
+                            class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                          >
+                            <small class="p-0 d-flex align-items-center"
+                              >Add to cart</small
+                            >
+                            <i class="fas fa-shopping-cart ml-1"></i>
+                          </button>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                          <p class="default-color text-center">
+                            <small>Left item: 10</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                >
+                  <div class="card category_details_card shadow-lg">
+                    <div
+                      class="category_details_card_img d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                        class="category_details_card_img_top"
+                        alt="..."
+                      />
+                    </div>
+
+                    <i class="far fa-heart"></i>
+                    <div
+                      class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                    >
+                      <small
+                        >10% <br />
+                        off</small
+                      >
+                    </div>
+                    <div class="card-body p-2">
+                      <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                      <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                      <!-- Price -->
+                      <div class="w-100 d-flex">
+                        <p class="mr-3 text-grey p-0 m-0">
+                          <del>Rs 85000</del>
+                        </p>
+                        <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                      </div>
+
+                      <!-- Offer timer -->
+                      <div class="d-flex w-100 align-items-center my-2">
+                        <div class="flex-wrap mr-3">
+                          <p class="my-auto">
+                            <small><b>offer ends in:</b> </small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>5</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Hour</b></small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>15</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Min</b></small>
+                          </p>
+                        </div>
+                        <div class="flex-wrap px-1 default-color font-sm">
+                          <p
+                            class="d-flex align-items-center justify-content-center p-0 m-0"
+                          >
+                            <small><b>8</b></small>
+                          </p>
+                          <p class="d-flex p-0 m-0">
+                            <small><b>Sec</b></small>
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Cart -->
+                      <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                          <button
+                            class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                          >
+                            <small class="p-0 d-flex align-items-center"
+                              >Add to cart</small
+                            >
+                            <i class="fas fa-shopping-cart ml-1"></i>
+                          </button>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                          <p class="default-color text-center">
+                            <small>Left item: 10</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card row II -->
+          <div class="row p-0 m-0">
+            <div class="col-12">
+              <h6 class="text-center">Brands</h6>
+            </div>
+
+            <!-- Brand 1 -->
+            <div class="row p-0 m-0">
+              <div class="col-6">
+                <div class="category_details_brand_logo">
+                  <img
+                    src="https://www.vippng.com/png/full/453-4536562_goldstar-nepal-logo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <a href="" class="float-right"> View more</a>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0 m-0">
+                <!-- Items -->
+                <div class="row py-5 px-0 mx-0" id="top-seller-card">
+                  <!-- Card -->
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Brand 2 -->
+            <div class="row p-0 m-0">
+              <div class="col-6">
+                <div class="category_details_brand_logo">
+                  <img
+                    src="https://pngimage.net/wp-content/uploads/2018/06/logo-mango-png-3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <a href="" class="float-right"> View more</a>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0 m-0">
+                <!-- Items -->
+                <div class="row py-5 px-0 mx-0" id="top-seller-card">
+                  <!-- Card -->
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Brand 3 -->
+            <div class="row p-0 m-0">
+              <div class="col-6">
+                <div class="category_details_brand_logo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/1960s_Gucci_Logo.svg/640px-1960s_Gucci_Logo.svg.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <a href="" class="float-right"> View more</a>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0 m-0">
+                <!-- Items -->
+                <div class="row py-5 px-0 mx-0" id="top-seller-card">
+                  <!-- Card -->
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-12 col-12 p-0 m-0 px-3 py-2"
+                  >
+                    <div class="card category_details_card shadow-lg">
+                      <div
+                        class="category_details_card_img d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06490108_1_.png"
+                          class="category_details_card_img_top"
+                          alt="..."
+                        />
+                      </div>
+
+                      <i class="far fa-heart"></i>
+                      <div
+                        class="discount d-flex justify-content-center align-items-center text-center text-dark"
+                      >
+                        <small
+                          >10% <br />
+                          off</small
+                        >
+                      </div>
+                      <div class="card-body p-2">
+                        <h5 class="card-title mb-0 pb-0">Laptop</h5>
+                        <p class="card-text mt-0"><small>Abc Shop</small></p>
+
+                        <!-- Price -->
+                        <div class="w-100 d-flex">
+                          <p class="mr-3 text-grey p-0 m-0">
+                            <del>Rs 85000</del>
+                          </p>
+                          <p class="p-0 m-0 text-price"><b>Rs 75000</b></p>
+                        </div>
+
+                        <!-- Offer timer -->
+                        <div class="d-flex w-100 align-items-center my-2">
+                          <div class="flex-wrap mr-3">
+                            <p class="my-auto">
+                              <small><b>offer ends in:</b> </small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>5</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Hour</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>15</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Min</b></small>
+                            </p>
+                          </div>
+                          <div class="flex-wrap px-1 default-color font-sm">
+                            <p
+                              class="d-flex align-items-center justify-content-center p-0 m-0"
+                            >
+                              <small><b>8</b></small>
+                            </p>
+                            <p class="d-flex p-0 m-0">
+                              <small><b>Sec</b></small>
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="row">
+                          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                            <button
+                              class="btn rounded-pill default-bg-color text-light d-flex align-items-center justify-content-center w-100 m-0 px-2"
+                            >
+                              <small class="p-0 d-flex align-items-center"
+                                >Add to cart</small
+                              >
+                              <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                          </div>
+                          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                            <p class="default-color text-center">
+                              <small>Left item: 10</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
