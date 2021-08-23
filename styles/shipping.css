@@ -18,7 +18,7 @@
 .shipping-line {
   position: relative;
   background-color: #fc7546;
-  width: 300px;
+  width: 25% !important;
   height: 0px;
   left: 200px;
   top: 55px;
@@ -64,7 +64,7 @@
 @media only screen and (max-width: 426px) and (min-width: 320px) {
   .shipping-line {
     left: 50px;
-    width: 50px;
+    /* width: 50px; */
     top: 30px;
   }
   .shipping-register {
@@ -96,7 +96,7 @@
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   .shipping-line {
     left: 100px;
-    width: 150px;
+    /* width: 150px; */
   }
 
   .shipping-eye-slash {
@@ -121,7 +121,7 @@
 @media only screen and (max-width: 1025px) and (min-width: 769px) {
   .shipping-line {
     left: 100px;
-    width: 250px;
+    /* width: 250px; */
   }
 
   .shipping-eye-slash {
