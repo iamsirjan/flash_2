@@ -1,0 +1,16 @@
+@import url("https //fonts.googleapis.com/css family=montserrat");
+
+.subtotal {
+  background: #f5fafc;
+}
+.shopping-cart-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.shopping-cart-img > img {
+  width: 100%;
+}
+.shopping-cart {
+  font-family: "Montserrat", sans-serif;
+}
