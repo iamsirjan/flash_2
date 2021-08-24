@@ -1,0 +1,17 @@
+.brand_listing_top_banner {
+  height: 40vh;
+  overflow: hidden !important;
+}
+.brand_listing_search {
+  border: 1px solid rgb(155, 155, 155);
+  width: fit-content;
+}
+.brand_listing_search > input {
+  border-width: 0px;
+  border: none;
+}
+
+.brand_listing_search > input:active {
+  border-width: 0px;
+  border: none !important;
+}
