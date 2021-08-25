@@ -1,6 +1,6 @@
-@import url("https //fonts.googleapis.com/css family=roboto &display=swap");
+@import url("https //fonts.googleapis.com/css family=lato &display=swap");
 .about {
-  font-family: "roboto" !important;
+  font-family: "lato" !important;
 }
 .brand_listing_top_banner {
   height: 40vh;
@@ -17,23 +17,22 @@
 }
 .about_title {
   height: 10%;
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 35px;
-  font-family: "roboto" !important;
+  font-family: "lato" !important;
   color: #3b0a69;
 }
 .about_text {
   height: 90%;
 }
 .about_text > p {
-  font-family: "Roboto";
+  font-family: "lato";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  font-family: "roboto" !important;
+  font-family: "lato" !important;
   line-height: 23px;
 }
 .about_us_bg,
