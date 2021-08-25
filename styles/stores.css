@@ -6,13 +6,16 @@
 }
 .store_list {
   width: 17%;
-  height: 195px;
+  height: 200px;
   border: 0.2px solid #b8b6b6 !important;
   float: left !important;
 }
 .store_list > div {
-  height: 80%;
+  height: 70%;
   overflow: hidden;
+}
+.store_list > p {
+  height: 12.5%;
 }
 
 .store_logo {
