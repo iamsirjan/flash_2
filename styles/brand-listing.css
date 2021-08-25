@@ -16,11 +16,29 @@
   border: none !important;
 }
 .brand_list {
-  width: 200px;
+  width: 15%;
   height: 200px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   border: 1px solid rgb(155, 155, 155);
 }
 .brand_list > div {
   height: 85%;
   overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .brand_list {
+    width: 20% !important ;
+    height: 155px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .brand_list {
+    width: 45% !important;
+    height: 155px;
+    margin-left: 2.5% !important;
+    margin-right: 2.5% !important;
+  }
 }
