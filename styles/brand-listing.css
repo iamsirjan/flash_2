@@ -9,6 +9,7 @@
 .brand_listing_search > input {
   border-width: 0px;
   border: none;
+  outline: none;
 }
 
 .brand_listing_search > input:active {

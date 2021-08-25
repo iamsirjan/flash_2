@@ -18,6 +18,7 @@
 .category_details_search > input {
   border-width: 0px;
   border: none;
+  outline: none;
 }
 
 .category_details_search > input:active {
