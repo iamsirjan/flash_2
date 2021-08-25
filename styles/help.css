@@ -1,0 +1,19 @@
+.help_search {
+  border: 1px solid rgb(202, 202, 202);
+  width: fit-content;
+  float: right;
+}
+.help_search > input {
+  border-width: 0px;
+  border: none;
+  outline: none;
+}
+.help_category > ul > li {
+  list-style: none;
+}
+.help_category > ul {
+  padding: 0;
+}
+.help_category {
+  background: #eff9ed;
+}
