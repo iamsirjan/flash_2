@@ -1,0 +1,42 @@
+@import url("https //fonts.googleapis.com/css family=roboto &display=swap");
+.brand_listing_top_banner {
+  height: 40vh;
+  overflow: hidden !important;
+}
+.about_img {
+  width: 100%;
+}
+.about_img > img {
+  width: 100%;
+}
+.about_title {
+  height: 10%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: #3b0a69;
+}
+.about_text {
+  height: 90%;
+}
+.about_text > p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.about_has_bg {
+  height: 50% !important;
+  background: rgba(238, 229, 229, 0.5);
+}
+
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 426px) {
+}
