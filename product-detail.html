@@ -13,6 +13,10 @@
     <script src="./styles/js/zoom.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+   
+    <script src="styles/js/jquery.exzoom.js"></script>
+    <link href="styles/jquery.exzoom.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -22,35 +26,29 @@
 
             <div class="col-lg-9 col-md-12 col-sm-12 col-12">
                 <div class="row px-5">
-                    <div class="col-lg-5 col-md-5 col-sm-12 col-12 d-flex align-items-center justify-content-center  p-0">
-                        <div class="row p-0">
-                            <div class="col-12 product-img p-0" id="img-container" style="z-index: 1;">
-                                <img src="https://dazedimg-dazedgroup.netdna-ssl.com/1080/azure/dazed-prod/1290/5/1295031.jpg"
-                                    alt="" id="img-large">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-12">
+                        <div class="product_detail_img_container">
+                          
+                            <div class="exzoom hidden" id="exzoom">
+                              <div class="exzoom_img_box w-100">
+                                <ul class="exzoom_img_ul">
+                                    <li><img src="https://m.media-amazon.com/images/I/71sizv3avPL._UY550_.jpg" /></li>
+                                    <li><img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></li>
+                                    <li><img src="https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /></li>
+                                    <li><img src="https://media.istockphoto.com/photos/colored-powder-explosion-abstract-closeup-dust-on-backdrop-colorful-picture-id1072093690?k=20&m=1072093690&s=612x612&w=0&h=Ns3WeEm1VrIHhZOmhiGY_fYKvIlbJrVADLqfxyPQVPM=" /></li>
+                                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqVXglCrfVQ49UGqSKU9vxn5UXrFJ0YtYajw&usqp=CAU" /></li>
+                                </ul>
+                              </div>
+                              <div class="exzoom_nav"></div>
+                              <p class="exzoom_btn">
+                                <a href="javascript:void(0);" class="exzoom_prev_btn"> < </a>
+                                <a href="javascript:void(0);" class="exzoom_next_btn"> > </a>
+                              </p>
                             </div>
-
-                            <!-- Img small -->
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 px-0 mt-3">
-                                <div class="row d-flex align-items-center justify-content-lg-between">
-                                    <div class="col-4 product-img-small" id="thumbs_img">
-                                        <img src="https://dazedimg-dazedgroup.netdna-ssl.com/1080/azure/dazed-prod/1290/5/1295031.jpg"
-                                            alt="" onclick="replaceThumbnail('https://dazedimg-dazedgroup.netdna-ssl.com/1080/azure/dazed-prod/1290/5/1295031.jpg')">
-                                    </div>
-                                    <div class="col-4 product-img-small" id="thumbs_img">
-                                        <img src="https://media.newyorker.com/photos/5f1604e4c0d6d7b73793b1d7/master/w_1600%2Cc_limit/Syme-NapDress.jpg"
-                                            alt="" onclick="replaceThumbnail('https://media.newyorker.com/photos/5f1604e4c0d6d7b73793b1d7/master/w_1600%2Cc_limit/Syme-NapDress.jpg')" >
-                                    </div>
-                                    <div class="col-4 product-img-small" id="thumbs_img">
-                                        <img src="https://m.media-amazon.com/images/I/81H3YBn5UgL._UX466_.jpg"
-                                            alt="" onclick="replaceThumbnail('https://m.media-amazon.com/images/I/81H3YBn5UgL._UX466_.jpg')" >
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                          </div>
                     </div>
 
-                    <div class="col-lg-7 col-md-7 col-sm-12 col-12 productdetails_description px-5 ">
+                    <div class="col-lg-7 col-md-6 col-sm-12 col-12 productdetails_description px-5 ">
                         <div class="w-100">
                             <h5>Cotton t-shirt</h5>
                         </div>
@@ -723,28 +721,14 @@
     </section>
 
     
-    <script>
-        var options1 = {
-            width: 400,
-            zoomWidth: 500,
-            offset: { vertical: 0, horizontal: 10 },
-        };
-
-       
-        var options2 = {
-            fillContainer: true,
-            offset: { vertical: 0, horizontal: 10 }
-        };
-        new ImageZoom(document.getElementById("img-container"), options2);
-
-
-      function replaceThumbnail(img){
-          document.getElementById('img-large').src=img;
-        new ImageZoom(document.getElementById("img-container"), options2);
-
-      }
-
-    </script>
+    <script type="text/javascript">
+        $(".product_detail_img_container").imagesLoaded(function () {
+          $("#exzoom").exzoom({
+            autoPlay: false,
+          });
+          $("#exzoom").removeClass("hidden");
+        });
+      </script>
 
 </body>
 
