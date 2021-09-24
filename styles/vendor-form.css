@@ -1,11 +1,5 @@
 .vendor-form-sec > .row > div {
-  background-image: linear-gradient(
-    to right,
-    #aa90e7,
-    #c4a6aa,
-    #c4a6aa,
-    #aa90e7
-  );
+  background-image: linear-gradient(to right, #aa90e7, #c4a6aa, #aa90e7);
   z-index: -1;
 }
 .vendor-form-sec > .row > .container {
