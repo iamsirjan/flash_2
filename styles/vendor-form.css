@@ -1,0 +1,15 @@
+.vendor-form-sec > .row > div {
+  background: linear-gradient(
+      268.69deg,
+      rgba(26, 7, 82, 0.5) 4.41%,
+      rgba(172, 189, 54, 0) 91.89%
+    ),
+    linear-gradient(89.9deg, #a48eed -3.32%, rgba(219, 75, 58, 0) 96.53%);
+  z-index: -1;
+}
+.vendor-form-sec > .row > .container {
+  border: 0.5px solid white;
+  margin-top: -15px !important;
+  margin-bottom: -15px !important;
+  z-index: 1 !important;
+}
