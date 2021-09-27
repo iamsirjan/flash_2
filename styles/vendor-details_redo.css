@@ -78,8 +78,8 @@ body {
   width: 125px;
   border-radius: 100%;
   overflow: hidden;
-  position: relative;
-  bottom: 50%;
+  /* position: relative; */
+  /* bottom: 50%; */
 }
 
 .vendor-details-img > img {
@@ -134,10 +134,10 @@ body {
   width: 100%;
 }
 .vendordetails_banner {
-  background: url("./image/banner.png");
+  /* background: url("./image/banner.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   height: 50px;
   width: auto;
 }
