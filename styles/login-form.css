@@ -1,0 +1,40 @@
+.login-form-section {
+  background: #364150 !important;
+  height: 100vh;
+}
+
+.default-login-form-color {
+  color: #32c5d2 !important;
+}
+
+.btn-login-form {
+  background-color: #32c5d2 !important;
+}
+.login-form-link {
+  text-decoration: none;
+  color: #337ab7;
+  cursor: pointer;
+}
+
+.copyright {
+  color: #7a8ca5;
+}
+
+.form-control {
+  background-color: #dde3ec !important;
+  border: 1px solid #dde3ec !important;
+}
+
+.alert {
+  border-width: 1px;
+}
+
+.alert-danger {
+  background-color: #fbe1e3;
+  border-color: #fbe1e3;
+  color: #e73d4a;
+}
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 35px;
+}

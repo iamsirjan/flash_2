@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+.term-container > p {
+  font-family: "Lato" !important;
+  color: #3b0a69;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+}
