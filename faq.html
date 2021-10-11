@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/faq.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d78692d9a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="container-fluid faq-bg d-flex align-items-center justify-content-center"
+        style="background: url('https://ak.picdn.net/shutterstock/videos/5664458/thumb/2.jpg');">
+        <div class="row">
+            <div class="col-lg-12 text-center text-light">
+                <h2>What's on your mind ??</h2>
+            </div>
+            <div class="col-lg-12 text-center text-light">
+                <h2>Ask Here</h2>
+            </div>
+            <div class="col-lg-12">
+                <div class="form-group w-75 mx-auto d-flex align-items-center justify-content-center bg-light rounded">
+
+                    <input type="email" class="form-control" placeholder="Search for question">
+                    <i class="fas fa-search text-primary px-3"></i>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container  px-5 ">
+        <div class="d-flex align-items-center justify-content-center shadow p-3  faq-floating-div mx-auto">
+            <div class="text-center mx-auto">
+                <p>
+                    <i class="fas fa-3x fa-shield-alt"></i>
+
+                </p>
+                <p>Security</p>
+            </div>
+            <div class="text-center mx-auto">
+                <p>
+                    <i class="fas fa-3x fa-truck"></i>
+
+                </p>
+                <p>Delivery</p>
+            </div>
+            <div class="text-center mx-auto">
+                <p>
+                    <i class="fas fa-3x fa-file-alt"></i>
+
+                </p>
+                <p>Order</p>
+            </div>
+            <div class="text-center mx-auto">
+                <p>
+                    <i class="fas fa-3x fa-shopping-basket"></i>
+
+                </p>
+                <p>Purchase</p>
+            </div>
+            <div class="text-center mx-auto">
+                <p>
+                    <i class="fas fa-3x fa-money-bill"></i>
+
+                </p>
+                <p>Payment</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faq-section container-fluid mx-0 px-0">
+        <div class="row mx-0 px-0">
+            <div class="col-lg-12 my-3">
+                <h3 class=" w-75 mx-auto" style="color: #3B0A69;">Payment</h3>
+            </div>
+
+            <div class="faq-two col-lg-12 my-2 faq-main ">
+                <!-- faq question -->
+                <h4 class="faq-page d-flex justify-content-between py-3 w-75 mx-auto">
+                    <p>Why do you need an FAQ page?</p>
+                    <p class="toogleButton">+</p>
+                </h4>
+
+                <!-- faq answer -->
+
+                <div class="faq-body w-75 mx-auto">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+                        saepe sequi, illum facere necessitatibus cum aliquam id illo omnis
+                        maxime, totam soluta voluptate amet ut sit ipsum aperiam.
+                        Perspiciatis, porro!
+                    </p>
+                </div>
+            </div>
+            <div class="faq-two col-lg-12 my-2 faq-main ">
+                <!-- faq question -->
+                <h4 class="faq-page d-flex justify-content-between py-3 w-75 mx-auto">
+                    <p>Why do you need an FAQ page?</p>
+                    <p class="toogleButton">+</p>
+                </h4>
+
+                <!-- faq answer -->
+
+                <div class="faq-body w-75 mx-auto">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+                        saepe sequi, illum facere necessitatibus cum aliquam id illo omnis
+                        maxime, totam soluta voluptate amet ut sit ipsum aperiam.
+                        Perspiciatis, porro!
+                    </p>
+                </div>
+            </div>
+            <div class="faq-two col-lg-12 my-2 faq-main ">
+                <!-- faq question -->
+                <h4 class="faq-page d-flex justify-content-between py-3 w-75 mx-auto">
+                    <p>Why do you need an FAQ page?</p>
+                    <p class="toogleButton">+</p>
+                </h4>
+
+                <!-- faq answer -->
+
+                <div class="faq-body w-75 mx-auto">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+                        saepe sequi, illum facere necessitatibus cum aliquam id illo omnis
+                        maxime, totam soluta voluptate amet ut sit ipsum aperiam.
+                        Perspiciatis, porro!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        var faq = document.getElementsByClassName("faq-page");
+        var i;
+
+        for (i = 0; i < faq.length; i++) {
+            faq[i].addEventListener("click", function () {
+                this.parentNode.classList.toggle("active");
+                var body = this.nextElementSibling;
+                if (body.style.display === "block") {
+                    body.style.display = "none";
+                } else {
+                    body.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
